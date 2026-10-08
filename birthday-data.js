@@ -107,7 +107,7 @@ const BIRTHDAY_DATA = {
         emoji: "❤️",
         name: "Mumma",
         photo: "./images/mom and yashi 1.png", // Add your Mom's photo file path here
-        message: "You are the best thing that ever happened to us. Watching you grow has been the greatest honour of my life. Happy birthday, my love."
+        message: "🎉Happy 15th birthday to my amazing Yashi ❤️You will always be my little girl ,no matter how grown up you get . May you always believe in yourself ,follow your dreams ,keep shining✨ ,keep smiling and always be you💕Love you endlessly 😘😘"
       },
       {
         emoji: "💙",
@@ -117,9 +117,9 @@ const BIRTHDAY_DATA = {
       },
       {
         emoji: "🦋",
-        name: "Your Sister",
+        name: "Yuvi",
         photo: "./images/yuvi and yashi.png", // Add your Sister's photo file path here
-        message: "You drive me crazy sometimes, but honestly? Life would be so boring without you. Love you forever, even when I don't say it."
+        message: "You drive me crazy sometimes, but honestly? Life would be so boring without you. Love you forever ❤️, even when I don't say it. I hope you get all that you want and more! Cheers to me earning more n you spending itt🤑💰!!"
       }
     ]
   },
@@ -136,18 +136,23 @@ const BIRTHDAY_DATA = {
       },
       {
         emoji: "✨",
-        name: "Priya",
-        message: "15 years of being on this planet and you're already this amazing?? Can't wait to see 16. Love you bestie!"
+        name: "Yeshii",
+        message: "Happy birthday yashi bby<3 ilysmm , i still remember the FIRST DAY that we met mtlb after becoming friends again lol n the way we YAPPED about F1 and how how carlos and charles look😻😻, lol. uske upar se jab jab tu idhr ayi h tab GIANIS dates, and vadodara wali masti was CRAZIER. n the day we went to bandstand and fort marines like WOW OCEAN BABY YASHI😛😛😛😛😛😛you’re literally gods blessing to me <3 the ONLY friend i can count on literally lmao iykyk, i love you sm like with all my life. You’re the only person who could get me to do things i wouldnt ever do (dance workshop) super super grateful for you cutie<333 HAPPY 15 CHUDAILLL come soon🥹🥹🥹"
       },
       {
         emoji: "🌻",
-        name: "Rhea",
-        message: "From sitting together in math to surviving high school... you're the best friend anyone could ask for. Happy birthday!"
+        name: "Siddhi",
+        message: "The pani puri day with Uttara Didi, you, and I where you slipped, fell, and just laughed like crazy on the floor getting us side eyes is honestly just one of many memories. You’re the smartest and silliest person all at once and so much fun to be with 😝. Never let anyone take that spark away, and just know I always love you 🫶🏼🫶🏼"
       },
       {
         emoji: "🌙",
-        name: "Zoe",
-        message: "I hope your birthday is as iconic as you are. We need to celebrate ASAP!!"
+        name: "Ruhama",
+        message: "The time Yashika, me, Aayushi and Anvi went for gedi at night and Yashika was legit running through the traffic omg I’ve never seen someone do something so stupid but hilarious at the same time!!"
+      },
+      {
+        emoji: "🎀",
+        name: "Uttara",
+        message: "One thing I admire the most about Yashika is how she notice everything and everyone. She notice the person standing alone, the one who isn’t getting enough attention, and somehow she always make sure they’re included and feel seen.That says so much about her beautiful heart ❤️."
       }
     ]
   },
@@ -179,29 +184,36 @@ const BIRTHDAY_DATA = {
   // ── POLAROID PHOTOS ───────────────────────────────────────
   memories: {
     photos: [
-      { src: "./images/day1.jpg", caption: "The day it all started", angle: -3 },
-      { src: "./images/2 mnth.jpg", caption: "Always smiling", angle: 4 },
-      { src: "./images/3 yr.jpg", caption: "Birthday #3", angle: -2 },
-      { src: "./images/3yrs.jpg", caption: "That one family trip", angle: 5 },
-      { src: "./images/4yrs.jpg", caption: "Besties since day 1", angle: -4 },
-      { src: "./images/5yrs.jpg", caption: "Unstoppable", angle: 2 },
-      { src: "./images/6yrs.jpg", caption: "15!", angle: -3 }
+      { src: "./images/start.jpg", caption: "The day it all started", angle: -3 },
+      { src: "./images/vaishu.jpg", caption: "Vaishnu Mata", angle: 4 },
+      { src: "./images/ravan.jpg", caption: "The scary Ravan", angle: -2 },
+      { src: "./images/fam.jpg", caption: "That one family trip", angle: 5 },
+      { src: "./images/diwali.jpg", caption: "Besties since day 1", angle: -4 },
+      { src: "./images/pink.jpg", caption: "Cutiee!!", angle: 2 },
+      { src: "./images/ganpati.jpg", caption: "Ganpati", angle: -3 },
+      { src: "./images/hehe.jpg", caption: "New House", angle: -3 },
+      { src: "./images/komalsavar.jpg", caption: "Sukoon wali yaari!", angle: 4 },
+      { src: "./images/WhatsApp Image 2026-10-08 at 7.29.50 PM.jpeg", caption: "Mumma's doll", angle: -2 },
+      { src: "./images/coolkids.jpg", caption: "Cooll Soodsss", angle: 5 },
+      { src: "./images/sp.jpg", caption: "Smartyy", angle: -4 },
+      { src: "./images/yuvi yashji.jpg", caption: "Beautiesss!!", angle: 2 },
+      { src: "./images/1yr.JPG", caption: "Gol Matolll🎀", angle: -3 }
     ]
   },
 
   // ── 15 THINGS LIST ────────────────────────────────────────
   fifteenThings: {
     items: [
-      "Your totally infectious, ridiculous laugh.",
-      "The way you genuinely care about your friends.",
-      "Your terrible, terrible taste in movies.",
-      "How fiercely independent you are.",
-      "Your absolutely chaotic Spotify playlists.",
-      "The way you light up when you talk about things you love.",
+      "You brought Shineee to our lives 15 yrs agoo!!",
+      "Bina stress ke exams mai crazy perform krna is commendable!!",
+      "Your loveeee for sweets and chocolatess",
+      "The way you always maintain your cool and calm in stressful situationss",
+      "Your artistic side whether it be Music(guitar) or art, you naill it!",
+      "Papa ki duplicate copy jo papa se bhi sorry bulwa leti hai",
       "Your random bursts of energy at 11 PM.",
-      "How you always try to see the good in people.",
+      "How you don't care what people think about and constantly live the way you want to",
       "Your completely unhinged text messages.",
-      "The way you're secretly really sentimental.",
+      "Your amazinggg baking skills:)))",
       "Your ability to sleep through literally anything.",
       "How you stand up for what you believe in.",
       "Your style (even when you steal my clothes).",
