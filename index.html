@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Happy Birthday!</title>
+
+  <!-- Basic SEO -->
+  <meta name="description" content="A beautiful digital birthday scrapbook." />
+  <meta name="theme-color" content="#fce4ec" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════════════════
+     SCENE 0: THE DIGITAL ENVELOPE (Interactive Opening)
+══════════════════════════════════════════════════════════ -->
+  <section id="scene-envelope" aria-label="Birthday envelope">
+    <div class="env-particles" id="env-particles" aria-hidden="true"></div>
+
+    <div class="envelope-wrapper" id="envelope-wrapper" tabindex="0" role="button" aria-label="Open the envelope"
+      onclick="openEnvelope()">
+
+      <div class="envelope-stage">
+        <!-- Back flap of envelope (SVG) -->
+        <svg class="envelope-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="20" width="280" height="170" rx="8" fill="#FCE4EC" />
+          <path d="M10 28 Q 150 100 290 28 L 290 182 Q 150 160 10 182 Z" fill="#F8BBD0" opacity="0.4" />
+          <path class="env-flap" d="M10 20 L150 105 L290 20 Z" fill="#F48FB1" />
+        </svg>
+
+        <!-- The letter that pulls out -->
+        <div class="env-letter">
+          <span class="letter-heart">💌</span>
+          <span class="letter-text">For you.</span>
+        </div>
+
+        <!-- Hearts that burst when opening -->
+        <div class="env-burst">
+          <span class="burst-heart" style="--tx: -60px; --ty: -80px;">💗</span>
+          <span class="burst-heart" style="--tx: 50px;  --ty: -100px;">🌸</span>
+          <span class="burst-heart" style="--tx: -30px; --ty: -120px;">✨</span>
+          <span class="burst-heart" style="--tx: 70px;  --ty: -60px;">💕</span>
+          <span class="burst-heart" style="--tx: 10px;  --ty: -140px;">🦋</span>
+        </div>
+      </div>
+
+      <div class="env-text">
+        <h2 class="env-to" id="env-name-text">Yashika</h2>
+        <p class="env-tagline" id="env-tagline-text">Open when you're ready…</p>
+      </div>
+
+      <button class="env-btn" id="env-btn">Open Your Memories ✉️</button>
+    </div>
+  </section>
+
+  <!-- Screen Flash Effect -->
+  <div id="light-flash" aria-hidden="true"></div>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+     MAIN SCROLLABLE CONTENT (The Scrapbook)
+══════════════════════════════════════════════════════════ -->
+  <main id="main-content" aria-label="Birthday Scrapbook">
+
+    <!-- ── 0. BIRTHDAY REVEAL (Page 1) ────────────────────── -->
+    <section id="scene-reveal" class="birthday-section" aria-label="Birthday reveal">
+      <div class="reveal-decorations" id="reveal-decorations" aria-hidden="true">
+        <!-- Balloons and confetti injected by JS -->
+      </div>
+
+      <div class="reveal-inner">
+        <!-- Big birthday headline -->
+        <div class="birthday-headline">
+          <span class="headline-happy">Happy</span>
+          <span class="headline-age" id="headline-age">15th</span>
+          <span class="headline-name" id="headline-name">Birthday, Yashika 💗</span>
+        </div>
+
+        <!-- Hero photo -->
+        <div class="hero-frame" id="hero-frame">
+          <div class="hero-photo-wrap">
+            <img class="hero-photo" id="hero-photo" src="./images/1st bday.png" alt="Birthday girl — Yashika"
+              onerror="this.style.display='none'; document.getElementById('hero-placeholder').style.display='flex';" />
+            <div class="hero-photo-placeholder" id="hero-placeholder" style="display:none">
+              <span class="ph-emoji">🌸</span>
+              <span class="ph-text">Add your photo to<br />./images/1st bday.png</span>
+            </div>
+          </div>
+          <p class="photo-caption" id="photo-caption">The birthday girl ✨</p>
+
+          <!-- Sparkle dots around photo -->
+          <div class="photo-sparkles" id="photo-sparkles" aria-hidden="true"></div>
+        </div>
+
+        <!-- Subtitle -->
+        <div class="reveal-subtitle">
+          <p id="reveal-subtitle-1">15 looks pretty amazing on you.</p>
+          <p id="reveal-subtitle-2">And this is just the beginning…</p>
+        </div>
+
+        <!-- Scroll prompt -->
+        <div class="scroll-prompt">
+          <p class="scroll-prompt-text" id="scroll-prompt-text">There's something waiting for you…</p>
+          <div class="scroll-cta" id="scroll-cta-text">
+            Scroll to Begin <span class="scroll-arrow">↓</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 1. Intro Message ("A million memories") ────────── -->
+    <section id="section-intro" class="birthday-section fade-in-up">
+      <div class="intro-card">
+        <h2 class="intro-title" id="intro-title">A million memories.</h2>
+        <div class="intro-lines">
+          <p>Before you get to the cake and presents,</p>
+          <p>we wanted to take you on a little trip down memory lane.</p>
+          <p>Because every year you've been here, the world has gotten a little brighter.</p>
+          <p class="intro-transition">Here's your story so far…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 2. Timeline (Your Story) ──────────────────────── -->
+    <section id="section-timeline" class="birthday-section">
+      <div class="section-header">
+        <span class="section-tag">CHAPTER BY CHAPTER</span>
+        <h2 class="section-title">Your Story</h2>
+      </div>
+
+      <div class="timeline" id="timeline-container">
+        <!-- Populated by app.js -->
+      </div>
+    </section>
+
+    <!-- ── 3. Family Messages ────────────────────────────── -->
+    <section id="section-family" class="birthday-section">
+      <div class="section-header">
+        <span class="section-tag">THE PEOPLE WHO LOVE YOU MOST</span>
+        <h2 class="section-title" id="family-title">Family</h2>
+        <p class="section-subtitle" id="family-subtitle">A few words from the people who have been there since day one.
+        </p>
+      </div>
+
+      <div class="family-grid" id="family-grid">
+        <!-- Populated by app.js -->
+      </div>
+    </section>
+
+    <!-- ── 4. Friend Messages ────────────────────────────── -->
+    <section id="section-friends" class="birthday-section">
+      <div class="section-header">
+        <span class="section-tag">YOUR FAVORITE HUMANS</span>
+        <h2 class="section-title" id="friends-title">Besties</h2>
+        <p class="section-subtitle" id="friends-subtitle">The ones who make life chaotic and wonderful.</p>
+      </div>
+
+      <div class="friends-grid" id="friends-grid">
+        <!-- Populated by app.js -->
+      </div>
+    </section>
+
+    <!-- ── 6. Polaroid Gallery ───────────────────────────── -->
+    <section id="section-polaroids" class="birthday-section">
+      <div class="section-header">
+        <span class="section-tag">CAPTURED MOMENTS</span>
+        <h2 class="section-title">The Memory Wall</h2>
+      </div>
+
+      <div class="polaroid-grid" id="polaroid-grid">
+        <!-- Populated by app.js -->
+      </div>
+    </section>
+
+    <!-- ── 7. 15 Things ──────────────────────────────────── -->
+    <section id="section-fifteen" class="birthday-section">
+      <div class="section-header">
+        <span class="section-tag">BECAUSE YOU'RE FIFTEEN</span>
+        <h2 class="section-title">15 Things we love about you</h2>
+      </div>
+
+      <div class="fifteen-grid" id="fifteen-grid">
+        <!-- Populated by app.js -->
+      </div>
+    </section>
+
+    <!-- ── 8. Finale ─────────────────────────────────────── -->
+    <section id="section-finale" class="birthday-section">
+      <div class="finale-confetti" id="finale-confetti" aria-hidden="true"></div>
+      <div class="finale-card fade-in-up">
+        <h2 class="finale-title" id="finale-title">Happy 15th Birthday</h2>
+        <p class="finale-message" id="finale-message">Fifteen is a beautiful age. Dream big, stay kind, and never lose
+          your sparkle.</p>
+        <p class="finale-signoff" id="finale-signoff">We love you endlessly. 💗</p>
+        <p class="finale-small" id="finale-small">Now go eat some cake!</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════════
+     SIDE NAVIGATION (Scroll Indicator)
+══════════════════════════════════════════════════════════ -->
+  <nav class="section-nav" id="section-nav" aria-label="Page progress">
+    <button class="nav-dot" data-target="scene-reveal" aria-label="Reveal"></button>
+    <button class="nav-dot" data-target="section-intro" aria-label="Intro"></button>
+    <button class="nav-dot" data-target="section-timeline" aria-label="Story Timeline"></button>
+    <button class="nav-dot" data-target="section-family" aria-label="Family"></button>
+    <button class="nav-dot" data-target="section-friends" aria-label="Friends"></button>
+    <button class="nav-dot" data-target="section-polaroids" aria-label="Polaroids"></button>
+    <button class="nav-dot" data-target="section-fifteen" aria-label="15 Things"></button>
+    <button class="nav-dot" data-target="section-finale" aria-label="Finale"></button>
+  </nav>
+
+  <!-- JS -->
+  <script src="./birthday-data.js"></script>
+  <script src="./app.js"></script>
+
+</body>
+
+</html>
