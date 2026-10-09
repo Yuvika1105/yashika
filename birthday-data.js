@@ -112,8 +112,8 @@ const BIRTHDAY_DATA = {
       {
         emoji: "💙",
         name: "Papa",
-        photo: "./images/papa.png", // Add your Dad's photo file path here
-        message: "Fifteen years of making me the proudest dad alive. You're going to do incredible things. I believe in you more than words can say."
+        photo: "./images/papa.jpeg", // Add your Dad's photo file path here
+        message: "Fifteen is such a beautiful age—a time to dream big, discover yourself, and create wonderful memories. Watching you grow into the lovely, confident and caring person you are today fills our hearts with immense pride and happiness.💕"
       },
       {
         emoji: "🦋",
