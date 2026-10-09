@@ -65,9 +65,9 @@ const BIRTHDAY_DATA = {
       age: "5",
       emoji: "🎒",
       accent: "#ce93d8",
-      title: "First Day of School",
+      title: "5th Birthday",
       photo: "./images/5yrs.jpg",
-      story: "You marched into kindergarten like you owned the place. We cried; you didn't even look back."
+      story: "The fake nails and chota bheem obsessed birthday party!! You grew up too fasttt...."
     },
     {
       year: "2017",
@@ -93,8 +93,8 @@ const BIRTHDAY_DATA = {
       emoji: "👑",
       accent: "#aed581",
       title: "Here We Are",
-      photo: "./images/12th.png",
-      story: "Fifteen years of you. We are so incredibly proud of the kind, smart, fierce young woman you are becoming."
+      photo: "./images/guitar.jpeg",
+      story: "Fifteen years of you. We are so incredibly proud of the kind, smart, fierce young woman you are becoming. And we love every phase of youuu!"
     }
   ],
 
@@ -113,7 +113,7 @@ const BIRTHDAY_DATA = {
         emoji: "💙",
         name: "Papa",
         photo: "./images/papa.jpeg", // Add your Dad's photo file path here
-        message: "Fifteen is such a beautiful age—a time to dream big, discover yourself, and create wonderful memories. Watching you grow into the lovely, confident and caring person you are today fills our hearts with immense pride and happiness.💕"
+        message: "Fifteen is such a beautiful age!! a time to dream big, discover yourself, and create wonderful memories. Watching you grow into the lovely, confident and caring person you are today fills our hearts with immense pride and happiness.💕"
       },
       {
         emoji: "🦋",
@@ -148,6 +148,11 @@ const BIRTHDAY_DATA = {
         emoji: "🌙",
         name: "Ruhama",
         message: "The time Yashika, me, Aayushi and Anvi went for gedi at night and Yashika was legit running through the traffic omg I’ve never seen someone do something so stupid but hilarious at the same time!!"
+      },
+      {
+        emoji: "✨",
+        name: "Anvii",
+        message: "I love youuu so much yashika,  literally one of the best things of 2025 was that we became friends,  you are one of the sweetest n kindest soul i have ever meet!!!"
       },
       {
         emoji: "🎀",
@@ -191,11 +196,11 @@ const BIRTHDAY_DATA = {
       { src: "./images/diwali.jpg", caption: "Besties since day 1", angle: -4 },
       { src: "./images/pink.jpg", caption: "Cutiee!!", angle: 2 },
       { src: "./images/ganpati.jpg", caption: "Ganpati", angle: -3 },
-      { src: "./images/hehe.jpg", caption: "New House", angle: -3 },
+      { src: "./images/popsy.jpeg", caption: "Choti Yashi and Badi Yashi!!", angle: -3 },
       { src: "./images/komalsavar.jpg", caption: "Sukoon wali yaari!", angle: 4 },
       { src: "./images/WhatsApp Image 2026-10-08 at 7.29.50 PM.jpeg", caption: "Mumma's doll", angle: -2 },
       { src: "./images/coolkids.jpg", caption: "Cooll Soodsss", angle: 5 },
-      { src: "./images/sp.jpg", caption: "Smartyy", angle: -4 },
+      { src: "./images/spec.jpeg", caption: "Smartyy", angle: -4 },
       { src: "./images/yuvi yashji.jpg", caption: "Beautiesss!!", angle: 2 },
       { src: "./images/1yr.JPG", caption: "Gol Matolll🎀", angle: -3 }
     ]
