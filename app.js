@@ -170,6 +170,13 @@ window.openEnvelope = function () {
   if (state.envelopeOpened) return;
   state.envelopeOpened = true;
 
+  // Play background music
+  const music = document.getElementById('bg-music');
+  if (music) {
+    music.volume = 0.4;
+    music.play().catch(e => console.log("Audio play blocked:", e));
+  }
+
   const wrapper = dom.envelopeWrapper;
   wrapper.classList.add('opening');
   wrapper.style.pointerEvents = 'none';
